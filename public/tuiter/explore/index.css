@@ -1,0 +1,65 @@
+.wd-border-color{
+    color: rgb(47, 51, 54);
+}
+
+.wd-searchbar{
+    background-color: lightgray; /**darkgrey bg color hides the placeholder text on my system**/
+    color: white;
+    border-radius: 10px;
+    float: left;
+    width: 40%
+}
+.wd-gear-link{
+    width:15px;
+    height:15px;
+    position: relative;
+    top: -15px;
+}
+
+.wd-clear-float{
+    clear: both;
+}
+
+.wd-explore-selected-link {
+    color: rgb(29,161,242);
+    font-size: 15px;
+    padding: 15px 15px 15px 0px;
+
+}
+.wd-explore-unselected-link{
+    color: rgb(110,118,125);
+    font-size: 15px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.wd-horiz-divider{
+    border-color: rgb(110,118,125);
+}
+.wd-suggested-small{
+    color: rgb(110,118,125);
+    font-size: 13px;
+}
+
+.wd-suggested-main{
+    color: white;
+}
+
+.wd-article-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    float:right;
+    margin-right: 16px;
+}
+
+.wd-suggested-author{
+    color:white;
+    font-size: 13px;
+}
+
+body{
+    background-color: black;
+    margin-left: 16px;
+}
+
