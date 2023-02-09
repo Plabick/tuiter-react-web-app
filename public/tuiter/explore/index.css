@@ -1,65 +1,63 @@
-.wd-border-color{
-    color: rgb(47, 51, 54);
+.wd-tuit-topic{
+font-size: 12px;
+    color: darkgray;
 }
-
-.wd-searchbar{
-    background-color: lightgray; /**darkgrey bg color hides the placeholder text on my system**/
-    color: white;
-    border-radius: 10px;
-    float: left;
-    width: 40%
+.wd-tuit-author{
+color:black;
+    font-weight: bold;
+    font-size:12px;
 }
-.wd-gear-link{
-    width:15px;
-    height:15px;
-    position: relative;
-    top: -15px;
-}
-
-.wd-clear-float{
-    clear: both;
-}
-
-.wd-explore-selected-link {
-    color: rgb(29,161,242);
-    font-size: 15px;
-    padding: 15px 15px 15px 0px;
-
-}
-.wd-explore-unselected-link{
-    color: rgb(110,118,125);
-    font-size: 15px;
-    padding: 15px;
-    margin-left: 10px;
-}
-
-.wd-horiz-divider{
-    border-color: rgb(110,118,125);
-}
-.wd-suggested-small{
-    color: rgb(110,118,125);
-    font-size: 13px;
-}
-
-.wd-suggested-main{
-    color: white;
+.wd-tuit-timestamp{
+    font-size: 12px;
+    color: darkgray;
 }
 
 .wd-article-pic{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    float:right;
-    margin-right: 16px;
+    width: 60px;
 }
 
-.wd-suggested-author{
-    color:white;
-    font-size: 13px;
+.wd-profile-pic{
+    border-radius: 48%;
+    width:27px;
 }
 
-body{
-    background-color: black;
-    margin-left: 16px;
+.wd-tuit-handle{
+    font-size:12px;
+    color:darkgray;
 }
 
+.wd-small{
+    font-size: 9px;
+}
+
+.wd-stacked-offset{
+left:-11px;
+}
+
+.wd-stacked-offset-text{
+    left:-11px;
+}
+
+.wd-cog{
+    margin-top: 200px;
+}
+
+/*
+.has-search.form-control and .has-search.form-control-feedback
+were taken from here
+https://www.gungorbudak.com/blog/2018/12/12/bootstrap-4-search-box-with-search-icon/
+*/
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
