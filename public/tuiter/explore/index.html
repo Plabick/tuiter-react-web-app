@@ -1,20 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
-    <link href="index.css" rel="stylesheet"/>
-    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-            crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <title>Explore screen</title>
+    <title>Explore</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="container col-sm-2">
+            <div class="list-group ">
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fab fa-twitter"></i></a>
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fa fa-home "></i><span class="d-none d-xl-inline"> Home</span></a>
+                <a class="list-group-item list-group-item-action active" href="#">
+                    <i class="fa fa-hashtag"></i><span class="d-none d-xl-inline"> Explore</span></a>
+                <a class="list-group-item list-group-item-action " href="#">
+                    <i class="fa fa-bell"></i><span class="d-none d-xl-inline"> Notifications</span></a>
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fa fa-envelope"></i> <span class="d-none d-xl-inline"> Messages</span></a>
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fa fa-bookmark"></i><span class="d-none d-xl-inline"> Bookmarks</span> </a>
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fa fa-list"></i><span class="d-none d-xl-inline"> Lists</span> </a>
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fa fa-user"></i><span class="d-none d-xl-inline"> Profile</span></a>
+                <a class="list-group-item list-group-item-action" href="#">
+                    <span class="fa fa-stack wd-stacked-offset"><i class="fas fa-circle fa-stack-1x m-0 p-0"></i><i
+                            class="fa fa-ellipsis-h fa-stack-1x fa-inverse m-0 p-0"></i>
+                    </span><span class="wd-stacked-offset-text"><span class="d-none d-xl-inline-block">More</span></span></a>
+                <button class="btn btn-primary rounded-pill">Tweet</button>
+            </div>
+        </div>
 
-<div class="container" id="wd-explore"></div>
-<script src="index.js" type="module"></script>
+        <div class="container col-sm-10  col-lg-7">
+            <div class="mb-10 row">
+                <div class="col">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
+                    </div>
+                </div>
+                <div class="col-1 my-auto">
+                    <i class="fa fa-cog fa-2x" style="color: blue"></i>
+                </div>
+            </div>
 
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-sm-none">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <img class="img-fluid" src="starship.png">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class=wd-tuit-topic>Web Development</div>
+                            <span class=wd-tuit-author>ReactJS</span> <span><i
+                                class="fa fa-check-circle"></i> </span><span
+                                class="wd-tuit-timestamp"> - 2h</span>
+                            <div>React.js is a component based front end library that makes it very easy to build Single
+                                Page
+                                Applications or SPAs
+                            </div>
+                        </div>
+                        <div class="col my-auto">
+                            <img class="wd-article-pic" src="https://www.svgrepo.com/show/327388/logo-react.svg">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <span class=wd-tuit-author>JavaScript</span> <span><i
+                                class="fa fa-check-circle"></i> </span><span
+                                class="wd-tuit-timestamp"> - 2h</span>
+                            <div>JavaScript is a programming language that can run on browsers as well as desktops
+                            </div>
+                        </div>
+                        <div class="col my-auto">
+                            <img class="wd-article-pic" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class=wd-tuit-topic>Web Development</div>
+                            <span class=wd-tuit-author>jQuery</span>
+                            <div class=wd-tuit-topic>123k Tuits</div>
+                        </div>
+                        <div class="col my-auto">
+                            <img class="wd-article-pic" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/jquery_plain_wordmark_logo_icon_146445.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class=wd-tuit-topic>Web Development</div>
+                            <span class=wd-tuit-author>NodeJS</span>
+                            <span class="wd-tuit-timestamp"> - 2h</span>
+                            <div class=wd-tuit-topic>123k Tuits</div>
+                        </div>
+                        <div class="col my-auto">
+                            <img class="wd-article-pic" src="https://user-images.githubusercontent.com/4727/38117885-69734bbc-336c-11e8-8653-86b0fa071896.png">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="container col d-none d-lg-block d-md-none">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="#">
+                    Who to follow</a>
+                <a class="list-group-item list-group-item-action p-0" href="#">
+                    <div class="row g-0">
+                        <div class="container col-1">
+                            <img class="wd-profile-pic" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+                        </div>
+                        <div class="container col-7">
+                            <div class="wd-tuit-author">Java <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div class="wd-tuit-handle">@Java</div>
+                        </div>
+                        <div class=" col-3 my-auto">
+                                    <span class="btn btn-primary rounded-pill wd-small justify-content-end">
+                                        Follow
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="container col-1">
+                            <img class="wd-profile-pic" src="https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg">
+                        </div>
+                        <div class="container col-7">
+                            <div class="wd-tuit-author">Relativity Space <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div class="wd-tuit-handle">@relativityspace</div>
+                        </div>
+                        <div class=" col-3 my-auto">
+                                    <span class="btn btn-primary rounded-pill wd-small justify-content-end">
+                                        Follow
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="container col-1">
+                            <img class="wd-profile-pic" src="https://cdn.freebiesupply.com/logos/large/2x/virgin-1-logo-svg-vector.svg">
+                        </div>
+                        <div class="container col-7">
+                            <div class="wd-tuit-author">Virgin Galactic <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div class="wd-tuit-handle">@virgingalactic</div>
+                        </div>
+                        <div class=" col-3 my-auto">
+                                    <span class="btn btn-primary rounded-pill wd-small justify-content-end">
+                                        Follow
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="container col-1">
+                            <img class="wd-profile-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png">
+                        </div>
+                        <div class="container col-7">
+                            <div class="wd-tuit-author">NASA <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div class="wd-tuit-handle">@NASA</div>
+                        </div>
+                        <div class=" col-3 my-auto">
+                                    <span class="btn btn-primary rounded-pill wd-small justify-content-end">
+                                        Follow
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="container col-1">
+                            <img class="wd-profile-pic" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/06/1200/675/TESLA-LOGO.jpg?ve=1&tl=1">
+                        </div>
+                        <div class="container col-7">
+                            <div class="wd-tuit-author">Tesla <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div class="wd-tuit-handle">@Tesla</div>
+                        </div>
+                        <div class=" col-3 my-auto">
+                                    <span class="btn btn-primary rounded-pill wd-small justify-content-end">
+                                        Follow
+                                    </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

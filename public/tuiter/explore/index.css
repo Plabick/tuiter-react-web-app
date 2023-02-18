@@ -1,9 +1,9 @@
 .wd-tuit-topic{
 font-size: 12px;
-    color: lightgrey;
+    color: darkgray;
 }
 .wd-tuit-author{
-color:white;
+color:black;
     font-weight: bold;
     font-size:12px;
 }
@@ -23,7 +23,7 @@ color:white;
 
 .wd-tuit-handle{
     font-size:12px;
-    color:lightgrey;
+    color:darkgray;
 }
 
 .wd-small{
