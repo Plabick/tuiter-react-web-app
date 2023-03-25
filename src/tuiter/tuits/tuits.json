@@ -1,0 +1,40 @@
+[ {
+  "_id": 234,
+  "topic": "Space",
+  "userName": "SpaceX",
+  "time": "2h",
+  "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+  "image": "https://asset.brandfetch.io/id2g3lee9x/idXX_e5k_s.jpeg",
+  "liked": true,
+  "replies": 123,
+  "retuits": 432,
+  "likes": 2345,
+  "handle": "@spacex",
+  "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+},
+  {
+    "_id": 234,
+    "userName": "Ford",
+    "time": "12h",
+    "image": "https://cdn.iconscout.com/icon/free/png-256/ford-1-202767.png",
+    "liked": false,
+    "replies": 0,
+    "retuits": 0,
+    "likes": 1,
+    "handle": "@ford",
+    "tuit": "Our cars go SLOW"
+  },
+  {
+    "_id": 123,
+    "topic": "Tesla",
+    "userName": "Tesla",
+    "time": "1h",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png",
+    "liked": false,
+    "replies": 23,
+    "retuits": 123,
+    "likes": 1253,
+    "handle": "@Tesla",
+    "tuit": "Our cars go FAST"
+  }
+]
