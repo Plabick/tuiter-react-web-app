@@ -1,20 +1,24 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { likeTuit, unlikeTuit, deleteTuit } from "./tuits-reducer";
 import TuitStats from './TuitStats';
 
-const TuitItem = ({ tuit }) => {
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
+const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     const handleLike = () => {
-        if (tuit.liked) {
-            dispatch(unlikeTuit(tuit._id));
-        } else {
-            dispatch(likeTuit(tuit._id));
-        }
+        dispatch(updateTuitThunk({
+            ...tuit,
+            likes: tuit.likes + 1}));
+    };
+
+    const handleDislike = () => {
+        dispatch(updateTuitThunk({
+            ...tuit,
+            dislikes: tuit.dislikes + 1}));
     };
 
     console.log(tuit);
@@ -39,6 +43,8 @@ const TuitItem = ({ tuit }) => {
                     likes={tuit.likes}
                     liked={tuit.liked}
                     onLike={handleLike}
+                    dislikes={tuit.dislikes}
+                    onDislike={handleDislike}
                 />
                     </div> </div></div>
         </div>
