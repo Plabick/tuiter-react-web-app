@@ -20,8 +20,6 @@ const TuitItem = ({tuit}) => {
             ...tuit,
             dislikes: tuit.dislikes + 1}));
     };
-
-    console.log(tuit);
     return (
         <div className="card mb-3">
             <div className="card-body">
